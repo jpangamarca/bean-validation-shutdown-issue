@@ -1,6 +1,6 @@
 # bean-validation-shutdown-issue
 
-The following stacktrace is presented to the user ay application shutdown:
+The following stacktrace is presented to the user at application shutdown (I've seen this behavior from DeltaSpike 1.3.0+, HV 5.0+ and Weld 2.2.6+):
 
 Exception in thread "Thread-0" java.lang.AbstractMethodError: org.apache.deltaspike.beanvalidation.impl.CDIAwareConstraintValidatorFactory.releaseInstance(Ljavax/validation/ConstraintValidator;)V
         at org.hibernate.validator.internal.engine.constraintvalidation.ConstraintValidatorManager.clear(ConstraintValidatorManager.java:201)
